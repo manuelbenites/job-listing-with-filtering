@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 function RenderCard(props) {
 	return (
 		<div key={props.card.id} className="card">
@@ -22,9 +24,14 @@ function RenderCard(props) {
 			<div className="card__categories">
 				{props.card.categories.map((item) => {
 					return (
-						<div key={item} className="card__categories--item">
+						<button
+							onClick={props.getFilter}
+							key={item}
+							value={item}
+							className="card__categories--item"
+						>
 							{item}
-						</div>
+						</button>
 					)
 				})}
 			</div>
