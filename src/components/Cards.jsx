@@ -1,6 +1,4 @@
-import { useState } from "react"
-
-function RenderCard(props) {
+function Cards(props) {
 	return (
 		<div key={props.card.id} className="card">
 			<div className="card--before"></div>
@@ -39,4 +37,4 @@ function RenderCard(props) {
 	)
 }
 
-export default RenderCard
+export default Cards

@@ -1,0 +1,20 @@
+.header {
+	overflow: hidden;
+	top: 0;
+
+	.header__img {
+		background: var(--desaturated-dark-cyan);
+		position: absolute;
+		height: 156px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.separation--filter--off {
+		height: 212px;
+	}
+
+	.separation--filter--on {
+		height: 119px;
+	}
+}

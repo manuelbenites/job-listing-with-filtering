@@ -1,18 +1,65 @@
 .filtertable {
-	margin-bottom: 56px;
 	margin-left: 24px;
 	margin-right: 24px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border: none;
-	border-radius: 5px;
-	background-color: var(--ft-light-grayish-cyan);
-	box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+	margin-bottom: 56px;
+	position: relative;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+
+	.filtertable__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		z-index: 100;
+		border: none;
+		border-radius: 5px;
+		background-color: var(--ft-light-grayish-cyan);
+		box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+
+		.filtertable__container__item {
+			display: flex;
+			flex-wrap: wrap;
+
+			.filtertable__item {
+				display: flex;
+				align-items: center;
+				margin-right: 16px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+
+				.filtertable__item--text {
+					margin-left: 8px;
+					margin-right: 11px;
+				}
+
+				.filter__icon__container {
+					cursor: pointer;
+					display: flex;
+					height: 32px;
+					width: 32px;
+					border: none;
+					background-color: var(--dark-grayish-cyan);
+					justify-content: center;
+					align-items: center;
+					flex-direction: row;
+
+					.filter--icon {
+						height: 13px;
+						width: 13px;
+						pointer-events: none;
+					}
+				}
+
+				.filter__icon__container:hover {
+					background-color: var(--very-dark-grayish-cyan);
+				}
+			}
+		}
+	}
 
 	.filtertable--button {
 		border: none;
