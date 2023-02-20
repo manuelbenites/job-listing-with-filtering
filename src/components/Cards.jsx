@@ -2,7 +2,7 @@ function Cards(props) {
 	return (
 		<div key={props.card.id} className="card">
 			<div className="card--before"></div>
-			<img className="card__logo" src={props.card.logo} />
+			<img className="card__logo" src={props.card.logo} alt="logo" />
 			<div className="card__container__rows">
 			<div className="card__first__row">
 				<div className="card__first__row--company">{props.card.company}</div>
