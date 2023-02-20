@@ -30,6 +30,8 @@
 				margin-right: 16px;
 				margin-bottom: 10px;
 				margin-top: 10px;
+				border-radius: 5px;
+				overflow: hidden;
 
 				.filtertable__item--text {
 					margin-left: 8px;
@@ -42,7 +44,7 @@
 					height: 32px;
 					width: 32px;
 					border: none;
-					background-color: var(--dark-grayish-cyan);
+					background-color: var(--desaturated-dark-cyan);
 					justify-content: center;
 					align-items: center;
 					flex-direction: row;
@@ -69,5 +71,23 @@
 		font-weight: 700;
 		font-family: var(--font-league-spartan);
 		color: var(--dark-grayish-cyan);
+	}
+
+	.filtertable--button:hover {
+		text-decoration: underline;
+	}
+}
+
+@media screen and (min-width: 1090px) {
+	.filtertable {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.filtertable {
+		margin-right: 130px;
+		margin-left: 130px;
 	}
 }
