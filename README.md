@@ -39,8 +39,8 @@ To add a filter, the user needs to click on the tablets on the right-side of the
 
 ### Links
 
-- Solution URL: [Github](https://github.com/ManuelBS95/job-listing-with-filtering)
-- Live Site URL: [Github Pages](https://manuelbs95.github.io/job-listing-with-filtering/)
+- Solution URL: [Github](https://github.com/manuelbenites/job-listing-with-filtering)
+- Live Site URL: [Github Pages](https://manuelbenites.github.io/job-listing-with-filtering/)
 
 ### Built with
 
